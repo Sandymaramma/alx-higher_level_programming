@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // script that prints message depending on number of arguments passed
 
-const argsCount = process.argv;
+const argsCount = process.argv.slice(2);
 
 // if...else statements were used to check number of arguments passed
 // console.log()function was used to print all messages
