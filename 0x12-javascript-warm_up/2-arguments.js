@@ -7,9 +7,9 @@ const argsCount = process.argv.length - 2;
 // console.log()function was used to print all messages
 
 if (argsCount === 0) {
-	console.log('No argument');
+  console.log('No argument');
 } else if (argsCount === 1) {
-	console.log('Argument found');
+  console.log('Argument found');
 } else {
-	console.log('Argument found');
+  console.log('Argument found');
 }
