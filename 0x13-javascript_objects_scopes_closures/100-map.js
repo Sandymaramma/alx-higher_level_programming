@@ -1,8 +1,4 @@
+#!/usr/bin/node
 const list = require('./100-data').list;
-
-const multipliedList = list.map((value, index) => {
-  return value * index;
-});
-
-console.log(`Original list: ${list}`);
-console.log(`Multiplied list: ${multipliedList}`);
+console.log(list);
+console.log(list.map((x, i) => x * i));
