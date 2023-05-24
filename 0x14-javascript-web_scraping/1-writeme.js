@@ -1,7 +1,11 @@
 #!/usr/bin/node
-# A script that writes a string to a file
+// A script that writes a string to a file
 const fs = require('fs');
 
-fs.writeFile(process.argv[2], process.argv[3], error => {
-  if (error) console.log(error);
+const file = process.argv[2];
+
+fs.writeFile(file, process.argv[3], { flag: 'w' }, (err) => {
+  if (err) {
+    console.log(err);
+  }
 });
